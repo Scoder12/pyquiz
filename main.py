@@ -54,7 +54,7 @@ def quiz():
     #filename = input("Enter filename (before .qli): ")
     filename = get_filename()
     if filename == "err":
-        get_filename()
+        filename = get_filename()
     questions = pickle.load(open(filename, "rb"))
     #print(questions["info"][0])
     print(questions)
